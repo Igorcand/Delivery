@@ -26,6 +26,12 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -e .["dev"]
+      
+    - name: Database Migrations
+      run: |
+        FLASK_APP=delivery/app.py flask create-db
+        FLASK_APP=delivery/app.py flask db upgrade
+
         
     - name: Run test
       run: |
