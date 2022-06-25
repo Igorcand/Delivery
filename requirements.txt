@@ -2,3 +2,4 @@ flask
 Flask_SQLAlchemy
 Flask-Migrate
 flask-admin
+dynaconf
