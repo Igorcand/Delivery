@@ -6,3 +6,7 @@ class User(db.Model):
     email = db.Column('email', db.Unicode, unique=True)
     passwd = db.Column('passwd', db.Unicode)
     admin = db.Column('admin', db.Boolean)
+
+    def save(self):
+        db.session.add(self)
+        db.session.commit()
