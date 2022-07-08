@@ -3,3 +3,6 @@ Flask_SQLAlchemy
 Flask-Migrate
 flask-admin
 dynaconf
+flask-wtf
+email-validator
+flask-login
