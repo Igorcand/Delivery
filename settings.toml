@@ -11,7 +11,7 @@ EXTENSIONS = [
     "delivery.ext.hooks:init_app",
 
 ]
-
+UPLOAD_FOLDER = "uploads"
 [development]
 DEBUG = true
 SQLALCHEMY_DATABASE_URI = "sqlite:///delivery.db"
